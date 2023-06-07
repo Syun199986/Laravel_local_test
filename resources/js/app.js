@@ -1,7 +1,13 @@
-import './bootstrap';
+import vueCounter from "./vueCounter";
+import { createApp } from "vue/dist/vue.esm-bundler";
 
-import Alpine from 'alpinejs';
+createApp({
+	setup() {
+		// カウンターを更新する
+		const { counter } = vueCounter();
 
-window.Alpine = Alpine;
-
-Alpine.start();
+		return {
+			counter,
+		};
+	},
+}).mount("#counter");

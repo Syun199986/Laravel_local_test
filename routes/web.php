@@ -14,12 +14,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('adminlte', function () {
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/adminlte', function () {
     return view('adminlte');
 });
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/vue', function () {
+    return view('vue');
 });
 
 Route::get('/dashboard', function () {
