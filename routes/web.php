@@ -14,6 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('adminlte', function () {
+    return view('adminlte');
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
