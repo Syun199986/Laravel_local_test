@@ -18,6 +18,6 @@
 
 @section('js')
 		<script>
-			console.log('ページごとのJSの記述');
+			console.log('ページごとのJSの記述です');
 		</script>
 @stop
